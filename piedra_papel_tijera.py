@@ -55,5 +55,3 @@ if (j == 3):
 
 if (j > 3):
     print("Ingresaste una opcion inválida, revisa las opciones")
-else:
-    print("Ingresaste una opcion inválida, revisa las opciones")
