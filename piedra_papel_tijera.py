@@ -12,7 +12,7 @@ print("3 Corresponde a tijera")
 
 # input
 
-j = int(input("Digite la opción: "))
+j = int(input("¿Qué escoges?: "))
     
 # processing
 
@@ -21,33 +21,39 @@ m = random.randint(1,3)
 if (j == 1):
     if (m == 1 ):
         print("Empate")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     elif (m==2):
-        print("Perdiste")
+        print("Lo siento, perdiste")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     else:
-        print("Ganaste")
+        print("Felicidades, ganaste")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
 
+        
 if (j == 2):
     if (m == 1):
-        print("Ganaste")
+        print("Felicidades, ganaste")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     elif (m == 2):
         print("Empate")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     else:
-        print ("Empate")
-    
+       print ("Lo siento, perdiste")
+       print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+
 
 if (j == 3):
     if ( m == 1):
-        print ("Perdiste")
+        print("Lo siento, perdiste")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     elif ( m ==2):
-        print("Ganaste")
+        print("Felicidades, ganaste")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
     else:
         print("Empate")
+        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
 
-
-
-
-
-
-
-
-
+if (j > 3):
+    print("Ingresaste una opcion inválida, revisa las opciones")
+else:
+    print("Ingresaste una opcion inválida, revisa las opciones")
