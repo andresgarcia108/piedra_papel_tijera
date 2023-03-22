@@ -18,40 +18,40 @@ j = int(input("¿Qué escoges?: "))
 
 m = random.randint(1,3)
 
-if (j == 1):
-    if (m == 1 ):
+if (j == 1):  #piedra
+    if (m == 1):
         print("Empate")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste piedra y la máquina sacó piedra")
     elif (m==2):
         print("Lo siento, perdiste")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste piedra y la máquina saco papel")
     else:
         print("Felicidades, ganaste")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste piedra y la máquina sacó tijera")
 
         
-if (j == 2):
+if (j == 2): #papel
     if (m == 1):
         print("Felicidades, ganaste")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste papel y la máquina sacó piedra")
     elif (m == 2):
         print("Empate")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste papel y la máquina sacó papel")
     else:
        print ("Lo siento, perdiste")
-       print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+       print("Elegiste papel  y la máquina sacó tijera")
 
 
-if (j == 3):
+if (j == 3): #tijera
     if ( m == 1):
         print("Lo siento, perdiste")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste tijera y la máquina sacó piedra")
     elif ( m ==2):
         print("Felicidades, ganaste")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste tijera y la máquina sacó papel")
     else:
         print("Empate")
-        print("Sacaste "  + str (j) + " y la máquina sacó " + str (m))
+        print("Elegiste tijera y la máquina sacó tijera")
 
 if (j > 3):
     print("Ingresaste una opcion inválida, revisa las opciones")
